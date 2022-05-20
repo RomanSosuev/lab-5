@@ -40,7 +40,7 @@ try:
     G = np.tril(A, k=0)
     print("Нижняя трeугольная матрица G\n", G,"\n")
     if np.linalg.det(A) == 0 or np.linalg.det(F) == 0:
-    print("Нельзя вычислить")
+        print("Нельзя вычислить")
     elif np.linalg.det(A) > np.trace(F):
         print("A^-1*AT – K * F^-1\n")
         print(np.linalg.inv(A)*np.transpose(A)-K*np.linalg.inv(F))
